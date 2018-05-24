@@ -19,5 +19,5 @@ const loginRoutes: Routes = [
     ]
 })
 
-export class LoginRouter {
+export class LoginRoutingModule {
 }

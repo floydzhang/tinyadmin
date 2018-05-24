@@ -9,10 +9,8 @@ const appRoutes: Routes = [
     {path: '', redirectTo: '/login', pathMatch: 'full'},
     {
         path: 'login',
-        loadChildren: 'app/login/login.module#LoginModule'
-    },
-    {path: 'app'},
-    {path: '**'}
+        loadChildren: './login/login.module#LoginModule'
+    }
 ];
 
 
@@ -24,5 +22,5 @@ const appRoutes: Routes = [
 
 })
 
-export class AppRouter {
+export class AppRoutingModule {
 }
