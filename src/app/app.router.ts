@@ -7,7 +7,10 @@ import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
  */
 const appRoutes: Routes = [
     {path: '', redirectTo: '/login', pathMatch: 'full'},
-    {path: 'login'},
+    {
+        path: 'login',
+        loadChildren: 'app/login/login.module#LoginModule'
+    },
     {path: 'app'},
     {path: '**'}
 ];
