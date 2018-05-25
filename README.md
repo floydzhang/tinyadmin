@@ -16,8 +16,8 @@ http://www.gradus.themeseason.com
 - [ ] Nested Routing
 - [ ] AoT compilation
 - [ ] Angular dynamic menu
-- [ ] ngx-datatable
-- [ ] ngx-charts
+- [x] ngx-datatable
+- [x] ngx-charts
 - [ ] Angular Perfect Scrollbar
 - [ ] Angular Drag&Drop
 - [ ] Maps(google, leaflet)
