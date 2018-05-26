@@ -74,3 +74,18 @@
 .w-100 {
     width: 100% !important;
 }
+
+.app.indigo-light .mat-toolbar.mat-primary {
+    color: rgb(255, 255, 255);
+    background: rgb(40, 53, 147);
+}
+
+
+
+.app.indigo-light .mat-raised-button.small-logo {
+    color: rgb(40, 53, 147);
+}
+
+.app.indigo-light .mat-toolbar-row, .app.indigo-light .mat-toolbar-single-row {
+    height: 56px;
+}
