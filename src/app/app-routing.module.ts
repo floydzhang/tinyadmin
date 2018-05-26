@@ -6,7 +6,7 @@ import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
  * App router
  */
 const appRoutes: Routes = [
-    {path: '', redirectTo: '/login', pathMatch: 'full'}
+    {path: '', redirectTo: '/pages', pathMatch: 'full'}
     ,
     {
         path: 'login',
