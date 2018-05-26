@@ -2,24 +2,24 @@
   <mat-sidenav-content cdkscrollable>
     <div class="h-100" fxLayout="row" fxLayoutAlign="center center">
         <form fxFlex="80" fxFlex.gt-sm="30" fxFlex.sm="60" novalidate>
-          <mat-card>
+          <mat-card class="p-0 mat-elevation-z24 box">
             <div class="bg-primary box-header" fxLayout="column" fxLayoutAlign="center center">
               <button mat-fab class="mat-elevation-z12" color="accent">
                 <mat-icon>exit_to_app</mat-icon>
               </button>
               <a mat-button>Don't have an account? Sign up now!</a>
             </div>
-            <mat-card-content fxLayout="column" fxLayoutAlign="end center">
+            <mat-card-content class="box-content" fxLayout="column" fxLayoutAlign="end center">
               <mat-card fxLayout="column" fxLayoutAlign="center center" class="mat-elevation-z12 box-content-inner">
                 <span class="box-content-header">member login</span>
-                <mat-form-field>
+                <mat-form-field class="w-100">
                     <input matInput placeholder="Email">
                 </mat-form-field>
-                <mat-form-field>
+                <mat-form-field class="w-100">
                     <input matInput placeholder="Password">
                 </mat-form-field>
               </mat-card>
-              <button mat-raised-button color="primary">SIGN IN</button>
+              <button mat-raised-button class="mat-elevation-z12 box-button" color="primary">SIGN IN</button>
             </mat-card-content>
           </mat-card>
         </form>
