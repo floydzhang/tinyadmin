@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
 import { MainRoutingModule } from './main/main-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MainRoutingModule } from './main/main-routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     MatSidenavModule,
     AppRoutingModule
   ],
