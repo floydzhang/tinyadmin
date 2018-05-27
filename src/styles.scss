@@ -161,3 +161,18 @@
 .menu-icon {
     margin-right: 16px;
 }
+
+.sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-out;
+}
+
+.sub-menu .mat-button {
+    padding-left: 20px;
+}
+
+.sub-menu.show {
+    max-height: 500px;
+    transition: max-height .25s ease-in;
+}

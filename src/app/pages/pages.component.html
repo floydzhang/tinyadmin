@@ -2,4 +2,37 @@
   <mat-sidenav class="sidenav mat-elevation-z6" mode="side" opened="true"> 
      <app-sidenav></app-sidenav>
   </mat-sidenav>
+  <mat-sidenav-content perfectScrollbar style="margin-left: 250px; margin-right: 0px;">
+    <mat-toolbar class="flex-p-x" color="primary">
+      <div class="w-100" fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+          </button>
+          <button mat-icon-button fxShow="false" fxShow.gt-xs>
+            <mat-icon>person</mat-icon>
+          </button>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="end center">
+          <div class="search-bar" fxLayout="row" fxLayoutAlign="start center" fxShow="false" fxShow.gt-xs>
+            <form method="get" novalidate>
+              <input type="text" class="mat-elevation-z3 show" placeholder="Type to search...">
+              <button type="button" mat-icon-button>
+                <mat-icon>search</mat-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </mat-toolbar>
+
+    <!-- content -->
+    <div class="inner-sidenav-content transition-2 ps ps--active-y" id="main-content" perfectScrollbar>
+      <!-- add breadcrumb -->
+      <!-- <app-breadcrumb></app-breadcrumb> -->
+
+      <!-- router entry -->
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
 </mat-sidenav-container>
