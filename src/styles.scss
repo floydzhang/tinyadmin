@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 * {
     margin: 0px;
@@ -88,4 +88,76 @@
 
 .app.indigo-light .mat-toolbar-row, .app.indigo-light .mat-toolbar-single-row {
     height: 56px;
+}
+
+
+.app.indigo-light .user-block {
+    border-bottom: 1px solid rgba(0,0,0,.12)
+}
+
+.user-block.show {
+    height: 156px;
+}
+
+.user-block{
+    height: 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.transition-2{
+    transition: .2s;
+}
+
+.user-block .user-info-wrapper {
+    padding: 0 6px;
+    margin: 6px 0;
+    width: 100%;
+}
+
+.user-block img {
+    width: 80px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 50%;
+}
+
+.user-block .user-info-wrapper .user-info {
+    text-align: center;
+
+    .name {
+        font-size: 15px;
+    }
+
+    .position {
+        font-size: 13px;
+    }
+}
+
+.app.indigo-light .muted-text {
+    color: rgba(0, 0, 0, .54);
+}
+
+.app.indigo-light .active-link {
+    border-radius: 0;
+    background-color: #283593;
+    color: #fff;
+}
+
+.menu-item .mat-button {
+    padding: 3px 0;
+    width: 100%;
+    font-weight: 400;
+}
+
+.menu-item .mat-button-wrapper {
+    padding-left: 16px;
+}
+
+.mat-button .mat-button-wrapper>*, .mat-fab .mat-button-wrapper>*, .mat-flat-button .mat-button-wrapper>*, .mat-icon-button .mat-button-wrapper>*, .mat-mini-fab .mat-button-wrapper>*, .mat-raised-button .mat-button-wrapper>*, .mat-stroked-button .mat-button-wrapper>* {
+    vertical-align: middle;
+}
+
+.menu-icon {
+    margin-right: 16px;
 }

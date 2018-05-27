@@ -1,4 +1,42 @@
-<mat-toolbar class="sidenav-header" color="primary" >
-  <a class="small-logo" color="accent" mat-raised-button>G</a>
-  <a class="logo ng-star-inserted">GRADUS</a>
+<mat-toolbar class="sidenav-header" color="primary">
+  <a class="small-logo" color="accent" mat-raised-button routerLink="/">G</a>
+  <a class="logo ng-star-inserted" routerLink="/">GRADUS</a>
+  <svg class="pin ng-star-inserted">
+    <!---->
+    <!---->
+    <!-- why svg not show -->
+    <path d="M2,5.27L3.28,4L20,20.72L18.73,22L12.8,16.07V22H11.2V16H6V14L8,12V11.27L2,5.27M16,12L18,14V16H17.82L8,6.18V4H7V2H17V4H16V12Z"
+      class="ng-star-inserted"></path>
+  </svg>
 </mat-toolbar>
+
+<div class="user-block transition-2 show" fxLayout="column" fxLayoutAlign="center center">
+  <div class="user-info-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <img alt="user-image" src="../assets/img/users/user.jpg">
+    <div class="user-info">
+      <p class="name">Emilio Verdines</p>
+      <p class="position ng-star-inserted">
+        Web developer 
+        <br>
+        <small class="muted-text">Member since May. 2016</small>
+      </p>
+    </div>
+  </div>
+  <div class="w-100 muted-text" fxLayout="row" fxLayoutAlign="space-around center">
+    <button mat-icon-button>
+      <mat-icon>person_outline</mat-icon>
+    </button>
+    <a mat-icon-button routeLink="/mailbox">
+      <mat-icon>mail_outline</mat-icon>
+    </a>
+    <a mat-icon-button routeLink="/login">
+      <mat-icon>power_settings_new</mat-icon>
+    </a>
+  </div>
+</div>
+
+
+<!--  -->
+<div class="sidenav-menu-outer ps user-block-show ps--actie-y" id="sidenav-menu-outer" perfectScrollbar>
+  <app-vertical-menu></app-vertical-menu>
+</div>

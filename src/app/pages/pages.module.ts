@@ -1,9 +1,22 @@
+// module start
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PagesComponent } from './pages.component';
 import { PagesRouterModule } from 'src/app/pages/pages.router.module';
-import { MatSidenavModule, MatToolbarModule, MatButtonModule } from '@angular/material';
+import { MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule, MatTooltipModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+// module end
+
+// components start
+import { PagesComponent } from './pages.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { VerticalMenuComponent } from './components/vertical-menu/vertical-menu.component';
+
+
+// variable 
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true
+}
 
 @NgModule({
   imports: [
@@ -11,13 +24,25 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     PagesRouterModule,
 
     //
+    FlexLayoutModule,
+    PerfectScrollbarModule,
+    //
     MatSidenavModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    MatTooltipModule
   ],
   declarations: [
     PagesComponent,
-    SidenavComponent
+    SidenavComponent,
+    VerticalMenuComponent
+  ],
+  providers: [
+    {
+      provide:PERFECT_SCROLLBAR_CONFIG,
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+    }
   ]
 })
 export class PagesModule { }
