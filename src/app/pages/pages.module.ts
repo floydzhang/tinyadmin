@@ -11,6 +11,7 @@ import { PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfi
 import { PagesComponent } from './pages.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { VerticalMenuComponent } from './components/vertical-menu/vertical-menu.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 // variable 
@@ -36,7 +37,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   declarations: [
     PagesComponent,
     SidenavComponent,
-    VerticalMenuComponent
+    VerticalMenuComponent,
+    DashboardComponent
   ],
   providers: [
     {
