@@ -176,3 +176,19 @@
     max-height: 500px;
     transition: max-height .25s ease-in;
 }
+
+.box .box-header .mat-fab {
+    margin-bottom: 8px;
+}
+
+.mat-button-toggle, .mat-card {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.box .box-header .error {
+    font-size: 46px;
+}
+
+.box .box-content .box-text {
+    margin-bottom: 10px;
+}

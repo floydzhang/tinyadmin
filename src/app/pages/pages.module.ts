@@ -24,6 +24,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     CommonModule,
     PagesRouterModule,
 
+
     //
     FlexLayoutModule,
     PerfectScrollbarModule,
@@ -38,7 +39,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     PagesComponent,
     SidenavComponent,
     VerticalMenuComponent,
-    DashboardComponent
+    DashboardComponent,
+    // pages
+ 
   ],
   providers: [
     {

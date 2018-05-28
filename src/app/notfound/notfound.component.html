@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+  
+  <mat-sidenav-content style="margin-left: 0px; margin-right: 0px;">
+    <div class="h-100" fxLayout="row" fxLayoutAlign="center center">
+        <div fxFlex="80" fxFlex.gt-sm="30" fxFlex.sm="60">
+          <mat-card class="p-0 mat-elevation-z24 box">
+            <div class="bg-primary box-header" fxLayout="column" fxLayoutAlign="center center">
+              <button class="mat-elevation-z12" color="accent" mat-fab>
+                <mat-icon>error</mat-icon>
+              </button>
+              <h1 class="error">404</h1>
+            </div>
+            <mat-card-content  class="box-content" fxLayout="column" fxLayoutAlign="end center">
+                <mat-card class="mat-elevation-z12 box-content-inner" fxLayout="column" fxLayoutAlign="center center">
+                    <p class="box-text">Opps, it seems that this page does not exist.</p>
+                    <p class="box-text">If you are sure it should, search for it.</p>
+                    <mat-form-field class="w-100">
+                      <input matInput placeholder="Enter search keyword...">
+                    </mat-form-field>
+                  </mat-card>
+                  <button class="mat-elevation-z12 box-button" color="primary" mat-raised-button type="button">SUBMIT</button>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>
