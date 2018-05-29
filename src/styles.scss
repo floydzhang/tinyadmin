@@ -192,3 +192,36 @@
 .box .box-content .box-text {
     margin-bottom: 10px;
 }
+
+.flex-p {
+    padding: 8px!important;
+}
+
+.p-1 {
+    padding: .5rem;
+}
+.app.indigo-light .mat-card-subtitle {
+    color: rgba(0,0,0,.54);
+}
+
+.m-0{
+    margin: 0!important;
+}
+
+.app.indigo-light .mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
+    background-color: #ff4081;
+    color: #fff;
+}
+.h-100p {
+    height: 100px;
+}
+.w-100 {
+    width: 100%!important;
+}
+.icon-sm, .mat-icon.icon-sm {
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+}
