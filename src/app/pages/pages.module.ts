@@ -22,6 +22,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { VerticalMenuComponent } from './components/vertical-menu/vertical-menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InfoCardsComponent } from './dashboard/info-cards/info-cards.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 
 // variable
@@ -54,6 +55,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     VerticalMenuComponent,
     DashboardComponent,
     InfoCardsComponent,
+    BreadcrumbComponent,
     // pages
 
   ],

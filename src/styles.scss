@@ -225,3 +225,12 @@
     width: 18px;
     vertical-align: middle;
 }
+
+a {
+    outline: 0;
+    text-decoration: none;
+}
+
+.app.indigo-light .breadcrumb a {
+    color: #283593;
+}
