@@ -249,3 +249,34 @@ a {
 .user-search .mat-form-field-infix {
     padding: 5px;
 }
+
+.flex-p-x {
+    padding: 0 8px!important;
+}
+
+.sidenav-header {
+    padding: 0 10px!important;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0 8px;
+    color: #fff;
+}
+
+.pin {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    fill: currentColor;
+}
+
+body {
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
