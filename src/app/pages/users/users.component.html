@@ -1,0 +1,27 @@
+<div class="flex-p" fxLayout="row" fxLayoutAlign="space-between center">
+  <div fxLayout="row">
+    <mat-button-toggle-group role="radiogroup">
+      <mat-button-toggle value="add">
+        <mat-icon>person_add</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle value="search">
+        <mat-icon>search</mat-icon>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+  <form class="user-search show">
+    <mat-form-field class="user-search-input">
+      <input matInput placeholder="Search user by name...">
+   </mat-form-field>
+  </form>
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-button-toggle-group role="radiogroup">
+        <mat-button-toggle>
+            <mat-icon>view_module</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle>
+            <mat-icon>view_list</mat-icon>
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</div>

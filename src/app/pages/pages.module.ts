@@ -9,7 +9,10 @@ import {
   MatIconModule,
   MatTooltipModule,
   MatChipsModule,
-  MatCardModule
+  MatCardModule,
+  MatButtonToggleModule,
+  MatFormFieldModule,
+  MatInputModule,
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -23,6 +26,7 @@ import { VerticalMenuComponent } from './components/vertical-menu/vertical-menu.
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InfoCardsComponent } from './dashboard/info-cards/info-cards.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { UsersComponent } from './users/users.component';
 
 
 // variable
@@ -47,6 +51,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     MatTooltipModule,
     MatChipsModule,
     MatCardModule,
+    MatButtonToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
     NgxChartsModule
   ],
   declarations: [
@@ -56,6 +63,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     DashboardComponent,
     InfoCardsComponent,
     BreadcrumbComponent,
+    UsersComponent,
     // pages
 
   ],

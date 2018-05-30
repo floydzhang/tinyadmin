@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PagesComponent } from 'src/app/pages/pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { UsersComponent } from './users/users.component';
 
 const pagesRoutes: Routes = [
     {
@@ -11,7 +12,7 @@ const pagesRoutes: Routes = [
         children: [
             {path: '', component: DashboardComponent},
             {path: 'dashboard', component: DashboardComponent},
-           
+            {path: 'users', component: UsersComponent},
         ]
     }
 ];

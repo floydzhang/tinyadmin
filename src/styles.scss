@@ -234,3 +234,18 @@ a {
 .app.indigo-light .breadcrumb a {
     color: #283593;
 }
+
+.user-search.show {
+    width: 100%;
+    overflow: visible;
+}
+
+.user-search .mat-form-field {
+    width: 100%!important;
+    text-align: center!important;
+    height: 46px;
+}
+
+.user-search .mat-form-field-infix {
+    padding: 5px;
+}
