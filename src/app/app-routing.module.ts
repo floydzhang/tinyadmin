@@ -19,7 +19,7 @@ const appRoutes: Routes = [
     {
         path: '',
         loadChildren: './pages/pages.module#PagesModule'
-    }, 
+    },
     {path: '**', component: NotfoundComponent}
 ];
 

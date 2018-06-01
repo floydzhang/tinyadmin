@@ -1,11 +1,19 @@
+import { AppSettings } from './app.settings';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule, MatButtonModule, MatIconModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import {
+  MatSidenavModule,
+  MatButtonModule,
+  MatIconModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule
+} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 // custom module
-import { AppRoutingModule } from './app-routing.module';
+
 
 // component
 import { AppComponent } from './app.component';
@@ -13,6 +21,7 @@ import { MainRoutingModule } from './main/main-routing.module';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +40,10 @@ import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
     MatInputModule,
     AppRoutingModule
   ],
-  providers: [SelectivePreloadingStrategy],
+  providers: [
+    AppSettings,
+    SelectivePreloadingStrategy
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
