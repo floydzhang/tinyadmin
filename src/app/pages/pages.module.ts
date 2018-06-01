@@ -29,6 +29,8 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { UsersComponent } from './users/users.component';
 import { FlagsMenuComponent } from './components/flags-menu/flags-menu.component';
 import { FullscreenComponent } from './fullscreen/fullscreen.component';
+import { ApplicationsComponent } from './applications/applications.component';
+import { MessagesComponent } from './messages/messages.component';
 
 
 // variable
@@ -68,6 +70,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     UsersComponent,
     FlagsMenuComponent,
     FullscreenComponent,
+    ApplicationsComponent,
+    MessagesComponent,
     // pages
 
   ],
