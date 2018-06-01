@@ -13,6 +13,7 @@ import {
   MatButtonToggleModule,
   MatFormFieldModule,
   MatInputModule,
+  MatMenuModule,
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -31,6 +32,7 @@ import { FlagsMenuComponent } from './components/flags-menu/flags-menu.component
 import { FullscreenComponent } from './fullscreen/fullscreen.component';
 import { ApplicationsComponent } from './applications/applications.component';
 import { MessagesComponent } from './messages/messages.component';
+import { UserMenuComponent } from './user-menu/user-menu.component';
 
 
 // variable
@@ -58,6 +60,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     MatButtonToggleModule,
     MatFormFieldModule,
     MatInputModule,
+    MatMenuModule,
     NgxChartsModule
   ],
   declarations: [
@@ -72,6 +75,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     FullscreenComponent,
     ApplicationsComponent,
     MessagesComponent,
+    UserMenuComponent,
     // pages
 
   ],
