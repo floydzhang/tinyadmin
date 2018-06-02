@@ -5,7 +5,7 @@ import { Settings } from './app.settings.model';
 export class AppSettings {
     public settings = new Settings(
         'Gradus',
-        true,
+        false,
         true,
         true,
         true,
