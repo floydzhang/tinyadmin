@@ -21,27 +21,40 @@ import { MainRoutingModule } from './main/main-routing.module';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app.routing';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+
+    LoginComponent,
+
     NotfoundComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
+
+
+    // material module
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+
+    // thire module
+    FlexLayoutModule,
+
+    // custom modue
     AppRoutingModule
+
   ],
   providers: [
     AppSettings,
+
     SelectivePreloadingStrategy
   ],
   bootstrap: [AppComponent]

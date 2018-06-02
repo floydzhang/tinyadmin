@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Settings } from './app.settings.model';
+import { AppSettings } from './app.settings';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  public settings: Settings;
+  constructor(appSettings: AppSettings) {
+    this.settings = appSettings.settings;
+  }
 }
