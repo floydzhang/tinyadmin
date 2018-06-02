@@ -1,0 +1,56 @@
+<mat-sidenav-container>
+
+  <div fxLayout="row" fxLayoutAlign="center center" class="h-100">
+
+    <form [formGroup]="loginform" fxFlex="80" fxFlex.gt-sm="30" fxFlex.sm="60">
+
+      <mat-card class="p-0 mat-elevation-z24 box">
+        <div fxLayout="column" fxLayoutAlign="center center" class="bg-primary box-header"
+             style="background-color: #2A3495">
+          <a mat-fab color="accent" class="mat-elevation-z12">
+            <mat-icon>exit_to_app</mat-icon>
+          </a>
+          <a mat-button routerLink="/register" style="color: white">Don't have an account? Sign up now!</a>
+        </div>
+        <mat-card-content fxLayout="column" fxLayoutAlign="end center" class="box-content" style="height: 275px">
+          <mat-card fxLayout="column" fxLayoutAlign="center center" class="mat-elevation-z12 box-content-inner"
+                    style="height: 275px">
+            <span class="box-content-header" style="border-top: 10em">member login</span>
+            <mat-form-field class="w-100">
+              <input matInput placeholder="Email *" formControlName="email">
+              <mat-error *ngIf="loginform.controls.email.errors?.required">Email is required</mat-error>
+              <mat-error
+                *ngIf="!loginform.controls.email.errors?.required && loginform.controls.email.hasError('email')">Enter
+                valid Email
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <input matInput placeholder="Password *" formControlName="password" type="password">
+              <mat-error *ngIf="loginform.controls.password.errors?.required">Password is required</mat-error>
+              <mat-error *ngIf="loginform.controls.password.hasError('minlength')">Password isn't long enough, minimum
+                of 4 characters
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <input matInput placeholder="Domain Name *" formControlName="domain">
+              <mat-error *ngIf="loginform.controls.domain.errors?.required">Domain name is required</mat-error>
+              <mat-error *ngIf="loginform.controls.domain.hasError('minlength')">Password isn't long enough, minimum of
+                6 characters
+              </mat-error>
+            </mat-form-field>
+            <a mat-button routerLink="/forgotpassword">Forgot Password?</a>
+          </mat-card>
+
+          <button mat-raised-button color="primary" class="mat-elevation-z12 box-button" (click)="Login()"
+                  [disabled]="loginform.invalid">{{ buttonText }}
+          </button>
+        </mat-card-content>
+      </mat-card>
+
+    </form>
+  </div>
+
+</mat-sidenav-container>
+
+<!--<ng4-loading-spinner> </ng4-loading-spinner>-->
+ß

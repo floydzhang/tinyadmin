@@ -22,7 +22,11 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
 import { AppRoutingModule } from './app.routing';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './authentication/login/login.component';
+import {LoginService} from './authentication/login/login.service';
+import {JwtService} from './service/jwt.service';
+import {LoggingService} from './service/logging.service';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     BrowserAnimationsModule,
 
+    ReactiveFormsModule,
 
     // material module
     MatSidenavModule,
@@ -44,6 +49,8 @@ import { LoginComponent } from './login/login.component';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+
+
 
     // thire module
     FlexLayoutModule,
@@ -54,6 +61,9 @@ import { LoginComponent } from './login/login.component';
   ],
   providers: [
     AppSettings,
+    LoginService,
+    JwtService,
+    LoggingService,
 
     SelectivePreloadingStrategy
   ],
